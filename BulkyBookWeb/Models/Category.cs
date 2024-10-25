@@ -10,7 +10,6 @@ namespace BulkyBookWeb.Models
         [Required]
         public String Name { get; set; }
 
-
         public int DisplayOrder { get; set; }
         public DateTime CreateDateTime { get; set; } = DateTime.Now;
 

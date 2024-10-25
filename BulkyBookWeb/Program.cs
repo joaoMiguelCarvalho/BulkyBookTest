@@ -5,7 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(
+    //configures the ApplicationDBContext in an ASP.NET Core application to use a SQL Server database (my server is DESKTOP-C79FDSF)
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 
